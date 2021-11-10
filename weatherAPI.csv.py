@@ -37,7 +37,7 @@ def main():
         csv_writer.writerow(["City", "Country", "Short description", "Accurate description", "Temperature", "Wind Speed"])
 
         while True:
-            print('How is the weather?')
+            print('\n Check the weather')
             city = input('\n Input any city in the world: ')
             cityy(city, csv_writer) #pozove def cityy
             url2 = 'http://api.openweathermap.org/data/2.5/weather?q={}&mode=html&appid=9fd4a33e0db32b96a20241175b963165'.format(city)
